@@ -37,7 +37,11 @@ farming.hoe_on_use = function(itemstack, user, pointed_thing, uses)
 	if regN[under.name].soil == nil or regN[under.name].soil.wet == nil or regN[under.name].soil.dry == nil then
 		return
 	end
-	
+
+	if minetest.is_protected(pt.under, user:get_player_name()) then
+		return
+	end
+
 	-- turn the node into soil, wear out item and play sound
 	minetest.set_node(pt.under, {name = regN[under.name].soil.dry})
 	minetest.sound_play("default_dig_crumbly", {
@@ -225,7 +229,7 @@ farming.register_plant = function(name, def)
 	minetest.register_abm({
 		nodenames = {"group:" .. pname, "group:seed"},
 		neighbors = {"group:soil"},
-		interval = 90,
+		interval = 600,
 		chance = 2,
 		action = function(pos, node)
 			local plant_height = minetest.get_item_group(node.name, pname)

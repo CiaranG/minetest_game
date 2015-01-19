@@ -1,0 +1,19 @@
+{
+    "nodes": {
+        "wool:white": {"textures": ["wool_white.png"]},
+        "wool:grey": {"textures": ["wool_grey.png"]},
+        "wool:black": {"textures": ["wool_black.png"]},
+        "wool:red": {"textures": ["wool_red.png"]},
+        "wool:yellow": {"textures": ["wool_yellow.png"]},
+        "wool:green": {"textures": ["wool_green.png"]},
+        "wool:cyan": {"textures": ["wool_cyan.png"]},
+        "wool:blue": {"textures": ["wool_blue.png"]},
+        "wool:magenta": {"textures": ["wool_magenta.png"]},
+        "wool:orange": {"textures": ["wool_orange.png"]},
+        "wool:brown": {"textures": ["wool_brown.png"]},
+        "wool:pink": {"textures": ["wool_pink.png"]},
+        "wool:dark_grey": {"textures": ["wool_dark_grey.png"]},
+        "wool:dark_green": {"textures": ["wool_dark_green.png"]}
+    }
+}
+

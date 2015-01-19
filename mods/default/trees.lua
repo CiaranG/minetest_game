@@ -19,7 +19,7 @@ end
 
 minetest.register_abm({
 	nodenames = {"default:sapling"},
-	interval = 10,
+	interval = 60,
 	chance = 50,
 	action = function(pos, node)
 		if not can_grow(pos) then
@@ -33,7 +33,7 @@ minetest.register_abm({
 
 minetest.register_abm({
 	nodenames = {"default:junglesapling"},
-	interval = 10,
+	interval = 60,
 	chance = 50,
 	action = function(pos, node)
 		if not can_grow(pos) then
